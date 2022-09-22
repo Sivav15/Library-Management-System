@@ -39,7 +39,7 @@ export const UserProvider = ({children}) => {
   if(val.status===200){
     await getData()
     setDeleteLoading(false)
-    navigate("/")
+    navigate("/portal/dashboard")
   }
   }
 
@@ -49,7 +49,7 @@ export const UserProvider = ({children}) => {
   if(val.status===200){
     await getData()
     setPutLoading(false)
-    navigate("/")
+    navigate("/portal/dashboard")
 
   }
 
