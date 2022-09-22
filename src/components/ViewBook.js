@@ -30,7 +30,7 @@ function ViewBook() {
                     { viewBook.currentStock === "In Stock" ? <h6 className="text-center text-success">{viewBook.currentStock}</h6> : <h6 className="text-center text-danger">{viewBook.currentStock}</h6>}
                     
                     <div className=' d-flex justify-content-center gap-2'>
-                    <Link to={`/edit-book/${viewBook.id}`} > <button  class="btn mb-2 "  style={{backgroundColor:"#FEC007"}}>Edit</button> </Link>
+                    <Link to={`/portal/edit-book/${viewBook.id}`} > <button  class="btn mb-2 "  style={{backgroundColor:"#FEC007"}}>Edit</button> </Link>
                      <button  class="btn mb-2"  style={{backgroundColor:"red"}} onClick ={()=>{
                         deleteData(viewBook.id);
                         
