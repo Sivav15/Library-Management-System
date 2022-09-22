@@ -29,7 +29,7 @@ export const UserProvider = ({children}) => {
   if(val.status===201){
     await getData()
     setAddLoading(false)
-    navigate("/")
+    navigate("/portal/dashboard")
   }
   }
 
