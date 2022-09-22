@@ -18,7 +18,7 @@ function Card({ data }) {
                     { data.currentStock === "In Stock" ? <h6 className="text-center text-success">{data.currentStock}</h6> : <h6 className="text-center text-danger">{data.currentStock}</h6>}
                     
                     <div className=' d-flex justify-content-center'>
-                    <Link to={`/view-book/${data.id}`} > <button  class="btn mb-2"  style={{backgroundColor:"#FEC007"}}>View</button> </Link>
+                    <Link to={`/portal/view-book/${data.id}`} > <button  class="btn mb-2"  style={{backgroundColor:"#FEC007"}}>View</button> </Link>
                       
                     </div>
                 </div>
